@@ -9,7 +9,7 @@ class Pyramids {
     }
 
     public static int promptUser(){
-    	return 10;
+    	return 100;
     }
 
    	public static void printPyramid(int size){
