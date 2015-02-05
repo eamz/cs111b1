@@ -1,0 +1,32 @@
+import java.util.*;
+
+class Pyramids {
+    public static void main(String args[]){
+
+    	int size = promptUser();
+    	printPyramid(size);
+    
+    }
+
+    public static int promptUser(){
+    	return 0;
+    }
+
+   	public static void printPyramid(int size){
+
+    }
+
+    public static void printSpaces(int count){
+
+    }
+
+    public static void printStars(){
+
+    }
+
+
+
+
+
+
+}
