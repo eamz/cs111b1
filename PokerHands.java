@@ -62,7 +62,7 @@ public class PokerHands {
                 } 
                 else 
                 {
-                    System.out.println("nothing.");
+                    System.out.println("high card.");
                 }
 
         
@@ -163,5 +163,6 @@ public class PokerHands {
 
         return false;
     }
+
 
 }
