@@ -1,7 +1,7 @@
 //erica martinez
 //cs111b1 / spring2015
 
-
+import java.util.*;
 import java.lang.Math;
 
 class MyCircle
@@ -50,11 +50,11 @@ class MyCircle
 
 	public boolean doesOverlap(MyCircle otherCircle)
 	{
-		distance = Math.pow((getX() + otherCircle.getX()), 2) + Math.pow((getY() + otherCircle.getY()), 2);martinez                                                                                                                                                                                                                                                                                                                                                                                                                                    tttttteyyeeyteeeeeeeyyeteeteyttttteyyyyuuuouquqqqqwqqwquqwqrWqtteetttttttteeyeyeeyyyuququueeetyyyuqrwteyuqoteqweyqruIIQWruqoquQOuquwruuwOWuqwrteyuqowretyquwWoquwOwqrowuetyqqqqquuwouwwwuwwwqwruwquwwowwrwoquwqquuuwiuqwoqqyyyyyyyyyyyyyyyyyyyyyyyyyyyyeeeyyyyyyyyyyyyyyyyyyyyyytttttttttttttttttt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-		distance = Math.sqrt(distance);
+		distance = Math.sqrt(Math.pow((getX() - otherCircle.getX()), 2) + Math.pow((getY() - otherCircle.getY()), 2));     
 
-		System.out.println("Distance: " + distance);
-		System.out.println("r1 + r2: " + (getRadius() + otherCircle.getRadius()));
+		//TEST MATH LOGIC
+		//System.out.println("Distance: " + distance);
+		//System.out.println("r1 + r2: " + (getRadius() + otherCircle.getRadius()));
 		
 		return distance < (getRadius() + otherCircle.getRadius());
 	}

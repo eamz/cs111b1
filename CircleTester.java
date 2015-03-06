@@ -22,9 +22,18 @@ class CircleTester
 		c3.setRadius(3);
 		System.out.println("Area: " + c3.getArea());
 
-		if (doesOverlap())
+		if (c1.doesOverlap(c2))
 		{
-			System.out.println("There is an overlap.");
+			System.out.println("Circle 1 and Circle 2 overlap.");
+		}
+		if (c1.doesOverlap(c3))
+		{
+			System.out.println("Circle 1 and Circle 3 overlap.");
+		}
+		if (c3.doesOverlap(c2))
+		{
+			System.out.println("Circle 2 and Circle 3 overlap.");
+		}
 		else
 		{
 			System.out.println("There is no overlap.");
