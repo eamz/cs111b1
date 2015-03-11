@@ -9,8 +9,6 @@ class MyRectangle
 	double height;
 	double area;
 
-	Scanner userIn = new Scanner(System.in);
-
 	public void setX(double value)
 	{
 		x = value;//pre-defined in the class
